@@ -1,0 +1,5 @@
+Jestem pasjonatem programowania z doświadczeniem w językach C++ i C, a także w technologiach webowych takich jak HTML, CSS i JavaScript.
+        Specjalizuję się zarówno w tworzeniu aplikacji desktopowych, jak i nowoczesnych, stron internetowych dopasowanych do potrzeb klienta.
+        <br><br>
+        Poza realizacją własnych projektów, oferuję również pomoc techniczną i doradztwo przy projektach innych osób.
+        Niezależnie od tego, czy jesteś studentem potrzebującym wsparcia w nauce, czy firmą szukającą sprawdzonego wykonawcy – zapraszam do współpracy!
