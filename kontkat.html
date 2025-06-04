@@ -17,25 +17,19 @@
   <main>
       <div class="card">
         <h3> Kontakt</h3>
-        <br>
-        <br>
-        <br>
         <b>
         <p>
-            <form
-            action="https://formspree.io/f/mjkrkkbl"
-            method="POST"
-          >
-            <label>
-              Your email:
-              <input type="email" name="email">
-            </label>
-            <label>
-              Your message:
-              <textarea name="message"></textarea>
-            </label>
-            <!-- your other form fields go here -->
-            <button type="submit">Send</button>
+          <form action="https://formspree.io/f/mjkrkkbl" method="POST">
+            <label for="email">Twój e-mail</label>
+            <input type="email" name="email" id="email" required>
+        
+            <label for="username">Jak się do Ciebie zwracać?</label>
+            <input type="text" name="username" id="username" required>
+        
+            <label for="message">Wiadomość</label>
+            <textarea name="message" id="message" rows="4" required></textarea>
+        
+            <button type="submit">Wyślij</button>
           </form>
       </div>
   </main>

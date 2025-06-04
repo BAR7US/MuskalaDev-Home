@@ -56,14 +56,10 @@ html, body {
     height: 400px;
     padding: 20px;
     text-align: center;
-    transition: transform 0.2s;
-  
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
-  
-    /* Dodane animacje */
     opacity: 0;
     transform: translateY(30px);
     animation-name: fadeInUp;
@@ -71,31 +67,25 @@ html, body {
     animation-duration: 0.6s;
     animation-timing-function: ease-out;
   }
-  
-  /* Definicja animacji */
+
   @keyframes fadeInUp {
     to {
       opacity: 1;
       transform: translateY(0);
     }
   }
-  
-  /* Opóźnienia dla kolejnych kart */
+
   .card:nth-child(1) {
     animation-delay: 0.4s;
   }
   .card:nth-child(2) {
     animation-delay: 0.6s;
-  }
+  }                                       
   .card:nth-child(3) {
     animation-delay: 0.8s;
   }
   .card:nth-child(4) {
     animation-delay: 1s;
-  }
-  
-  .card:hover {
-    transform: translateY(-5px);
   }
   
   .card h3 {
@@ -139,17 +129,5 @@ html, body {
     text-align: center;
     font-size: 0.9rem;
     color: #777;
-  }
-  
-  @media (max-width: 1100px) {
-    .cards {
-      grid-template-columns: repeat(2, 250px);
-    }
-  }
-  
-  @media (max-width: 600px) {
-    .cards {
-      grid-template-columns: repeat(1, 250px);
-    }
   }
   

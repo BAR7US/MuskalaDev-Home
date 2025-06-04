@@ -1,124 +1,155 @@
 html, body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #f8f9fa;
-    color: #333;
-    height: 100%;
-  }
-  
-  body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  
-  header {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    background-color: #ffffff;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  header img {
-    height: 100px;
-    margin-right: 60px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  }
-  header img:hover{
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 20px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  height: 100%;
+}
 
-  }
-  
-  header h1 {
-    font-size: 2rem;
-    margin: 0;
-  }
-  
-  main {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 60px 20px;
-  }
-  
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
-  .card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    width: 700px;
-    height: 400px;
-    padding: 20px;
-    text-align: center;
-    transition: transform 0.2s;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    opacity: 0;
-    transform: translateY(30px);
-    animation-name: fadeInUp;
-    animation-fill-mode: forwards;
-    animation-duration: 0.6s;
-    animation-timing-function: ease-out;
+header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+header img {
+  height: 100px;
+  margin-right: 60px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+header img:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 20px;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  width: 700px;
+  height: auto;
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(30px);
+  animation-name: fadeInUp;
+  animation-fill-mode: forwards;
+  animation-duration: 0.6s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  @keyframes fadeInUp {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  .card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .card h3 {
-    font-size: 1.2rem;
-    color: #007bff;
-    margin: 0 0 10px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .card p {
-    font-size: 0.95rem;
-    margin: 0;
-    height: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-  
-  .card a {
-    text-decoration: none;
-    color: white;
-    background-color: #007bff;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-weight: bold;
-    margin-top: auto;
-  }
-  
-  .card a:hover {
-    background-color: #0056b3;
-  }
-  
-  footer {
-    padding: 20px;
-    background-color: #ffffff;
-    border-top: 1px solid #ddd;
-    text-align: center;
-    font-size: 0.9rem;
-    color: #777;
-  }
-  
-  
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  color: #007bff;
+  margin: 0 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+}
+
+.card label {
+  text-align: left;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #333;
+}
+
+.card input,
+.card textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  width: 300px;
+}
+
+.card textarea {
+  resize: vertical;
+}
+
+.card button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+  background-color: #0056b3;
+}
+
+.card a {
+  text-decoration: none;
+  color: white;
+  background-color: #007bff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: auto;
+}
+
+.card a:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  padding: 20px;
+  background-color: #ffffff;
+  border-top: 1px solid #ddd;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #777;
+}
